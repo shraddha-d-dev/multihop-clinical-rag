@@ -1,0 +1,676 @@
+    [
+        {
+        "protocolSection": {
+            "identificationModule": {
+                "nctId": "NCT00443430",
+                "briefTitle": "Trial of Early Aggressive Drug Therapy in Juvenile Idiopathic Arthritis"
+            },
+            "statusModule": {
+                "startDateStruct": {
+                    "date": "2007-05"
+                },
+                "completionDateStruct": {
+                    "date": "2010-10",
+                    "type": "ACTUAL"
+                }
+            },
+            "sponsorCollaboratorsModule": {
+                "leadSponsor": {
+                    "name": "Seattle Children's Hospital",
+                    "class": "OTHER"
+                }
+            },
+            "descriptionModule": {
+                "briefSummary": "The purpose of this study is to compare two aggressive drug regimens for children with poly-juvenile idiopathic arthritis (JIA) and extended oligo JIA.",
+                "detailedDescription": "JIA is a type of arthritis with no definite cause and an onset prior to 16 years of age. JIA causes joint destruction, pain, and permanent disability. There are multiple types of JIA; collectively, they represent one of the most common chronic diseases in children and the most prevalent pediatric rheumatic illness. Poly-JIA, one type of JIA, affects at least five joints in the body within the first 6 months of disease. Long-term remission of poly-JIA is uncommon, and most children must remain on multiple combinations of medications for many years. The usual treatment for poly-JIA is based upon the gradual addition of medications that might be more effective in treating this disease. There is a need to find uniformly effective treatments for children with poly-JIA. Based on previous adult arthritis studies, there appears to be an early window of opportunity in the disease progression during which aggressive therapy has a profound beneficial long-term effect. The purpose of this study is to compare the effectiveness of two aggressive drug regimens in treating children with poly-JIA. Specifically, the study will determine whether aggressive therapy started in the first 6 months of disease onset can result in inactive disease and clinical remission while on these medications.\n\nAll participants will receive weekly methotrexate shots while in the study. In addition, participants will be randomly assigned to one of two groups:\n\n* Group 1 participants will receive placebo etanercept shots for up to 12 months and daily placebo prednisolone liquid for 4 months.\n* Group 2 participants will receive etanercept shots for up to 12 months and daily prednisolone liquid for 4 months.\n\nThe study will last up to 12 months and include two parts. Part A will last 1 to 6 months, depending on response to assigned treatments. If participants are still experiencing active arthritis at 6 months, they will be offered open-label treatment with etanercept and prednisolone. If participants experience inactive disease any time prior to 6 months, they will enter Part B of the study. During Part B, which will last up to 6 months, participants will remain on the same treatment regimen that they were provided in Part A. If participants experience inactive disease followed by a flare of disease any time during the study, they will stop participating.\n\nDuring the study, there will be 11 study visits for all participants. Study visits will include a physical exam, including joint evaluations; blood and urine collection; and questionnaires regarding function, quality of life, medication compliance, other medications used, infections, and adverse symptoms.\n\nBlood will be collected for translational studies."
+            },
+            "conditionsModule": {
+                "conditions": [
+                    "Juvenile Chronic Polyarthritis",
+                    "Juvenile Idiopathic Arthritis",
+                    "Juvenile Rheumatoid Arthritis"
+                ]
+            },
+            "designModule": {
+                "phases": [
+                    "PHASE4"
+                ],
+                "enrollmentInfo": {
+                    "count": 85,
+                    "type": "ACTUAL"
+                }
+            },
+            "armsInterventionsModule": {
+                "interventions": [
+                    {
+                        "type": "DRUG",
+                        "name": "methotrexate",
+                        "description": "Methotrexate 0.5 mg/kg given by sub cutaneous injection once per week, plus placebo etanercept and and placebo prednisolone",
+                        "armGroupLabels": [
+                            "Methotrexate Arm"
+                        ],
+                        "otherNames": [
+                            "placebo enbrel",
+                            "placebo prednisolone"
+                        ]
+                    },
+                    {
+                        "type": "DRUG",
+                        "name": "methotrexate - etanercept - prednisolone arm",
+                        "description": "methotrexate 0.5 mg/kg given by sub cutaneous injection once per week, plus etanercept 0.8 mg/kg given by sub cutaneous injection once per week, plus prednisolone, by mouth daily with decreasing dose tapered over 16 weeks.",
+                        "armGroupLabels": [
+                            "Methotrexate-Etanercept-Prednisolone Arm"
+                        ],
+                        "otherNames": [
+                            "enbrel",
+                            "prednisone"
+                        ]
+                    }
+                ]
+            },
+            "outcomesModule": {
+                "primaryOutcomes": [
+                    {
+                        "measure": "Proportion of Participants Who Attain Inactive Disease by 6 Months",
+                        "timeFrame": "6 months after initiation of study intervention"
+                    }
+                ]
+            },
+            "eligibilityModule": {
+                "eligibilityCriteria": "Inclusion Criteria:\n\n* Diagnosis of active poly-JIA as determined by International League of Associations for Rheumatology (ILAR) criteria\n* Onset of signs and symptoms of poly-JIA for 12 months or less prior to study screening\n* Willing to use acceptable forms of contraception for the duration of the study and for 3 months after the study\n* Parent or guardian willing to provide informed consent\n* Able to attend all study visits\n\nExclusion Criteria:\n\n* Received or currently receiving disease-modifying antirheumatic drugs (DMARDs), biologic, or prednisone for any duration for treatment of poly-JIA, with the following exceptions:\n\n  1. Methotrexate duration must be less than or equal to 6 weeks at a dose of less than or equal to 0.5 mg/kg/week (40 mg max),\n  2. Steroid use has been less than or equal to 4 weeks and the subject is off of steroids for at least 1 week prior to enrollment\n* Received intramuscular or soft-tissue injections of corticosteroids for treatment of poly-JIA before receiving the first dose of study medication. Up to 2 joint injections with intra-articular steroids (IAS) will be allowed up to 7 days after the baseline visit.\n* History of or active cancer of any type\n* Active gastrointestinal disease (e.g., inflammatory bowel disease)\n* Chronic or acute kidney or liver disorder\n* Significant blood clotting defect\n* AST (SGOT), ALT (SGPT), or BUN levels more than two times the upper level of normal, creatinine levels more than 1.5 mg/dl, or any other laboratory abnormality considered to be clinically significant within 28 days prior to baseline\n* Chronic condition (e.g., diabetes, epilepsy) that is either not stable or poorly controlled and may interfere with study participation\n* Received any investigational medication within 30 days prior to the first dose of study medication or scheduled to receive an investigational drug (other than the study medications) during the course of the study\n* Chronic or active infection or any major episode of infection requiring hospitalization or treatment with intravenous antibiotics within 30 days prior to study screening\n* HIV infected\n* Known past or current hepatitis infection\n* Received a live virus vaccine within 1 month prior to baseline\n* Purified protein derivative (PPD) positive (positive tuberculosis \\[TB\\] test)\n* Pregnancy\n* Any medical condition that would make study participation difficult or inadvisable in the opinion of the investigator\n* History of or current psychiatric illness that would interfere with study participation\n* History of alcohol or drug abuse within the 6 months prior to study entry that would interfere with study participation\n* Inability to comply with study requirements for any reason"
+            }
+        },
+        "resultsSection": {
+            "participantFlowModule": {
+                "preAssignmentDetails": "Eligible patients were permitted to have received up to 2 intra-articular corticosteroid injections before or up to 2 weeks after baseline; and oral prednisolone for up to 4 weeks, but must have been off corticosteroids for at least 1 week prior to enrollment. Patients with past or current JIA-associated uveitis were excluded.",
+                "recruitmentDetails": "85 children with poly JIA within 12 months of onset recruited from pediatric rheumatology clinics at 15 sites",
+                "groups": [
+                    {
+                        "id": "FG000",
+                        "title": "Methotrexate Arm",
+                        "description": "Methotrexate 0.5 mg/kg given by subcutaneous injection once per week, plus placebo etanercept and placebo prednisolone"
+                    },
+                    {
+                        "id": "FG001",
+                        "title": "Methotrexate-Prednisolone-Etanercept Arm",
+                        "description": "Methotrexate 0.5 mg/kg given by subcutaneous injection once per week, plus etanercept 0.8 mg/kg given by subcutaneous injection once per week, plus prednisolone by mouth daily with decreasing dose tapered over 16 weeks"
+                    }
+                ],
+                "periods": [
+                    {
+                        "title": "Overall Study",
+                        "milestones": [
+                            {
+                                "type": "STARTED",
+                                "achievements": [
+                                    {
+                                        "groupId": "FG000",
+                                        "numSubjects": "43"
+                                    },
+                                    {
+                                        "groupId": "FG001",
+                                        "numSubjects": "42"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "COMPLETED",
+                                "achievements": [
+                                    {
+                                        "groupId": "FG000",
+                                        "numSubjects": "39"
+                                    },
+                                    {
+                                        "groupId": "FG001",
+                                        "numSubjects": "38"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "NOT COMPLETED",
+                                "achievements": [
+                                    {
+                                        "groupId": "FG000",
+                                        "numSubjects": "4"
+                                    },
+                                    {
+                                        "groupId": "FG001",
+                                        "numSubjects": "4"
+                                    }
+                                ]
+                            }
+                        ],
+                        "dropWithdraws": [
+                            {
+                                "type": "Lack of Efficacy",
+                                "reasons": [
+                                    {
+                                        "groupId": "FG000",
+                                        "numSubjects": "3"
+                                    },
+                                    {
+                                        "groupId": "FG001",
+                                        "numSubjects": "3"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "Adverse Event",
+                                "reasons": [
+                                    {
+                                        "groupId": "FG000",
+                                        "numSubjects": "1"
+                                    },
+                                    {
+                                        "groupId": "FG001",
+                                        "numSubjects": "1"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "baselineCharacteristicsModule": {
+                "populationDescription": "2 patients were ineligible",
+                "groups": [
+                    {
+                        "id": "BG000",
+                        "title": "Methotrexate Arm",
+                        "description": "Methotrexate 0.5 mg/kg given by subcutaneous injection once per week, plus placebo etanercept and placebo prednisolone"
+                    },
+                    {
+                        "id": "BG001",
+                        "title": "Methotrexate-Prednisolone-Etanercept Arm",
+                        "description": "Methotrexate 0.5 mg/kg given by subcutaneous injection once per week, plus etanercept 0.8 mg/kg given by subcutaneous injection once per week, plus prednisolone by mouth daily with decreasing dose tapered over 16 weeks"
+                    },
+                    {
+                        "id": "BG002",
+                        "title": "Total",
+                        "description": "Total of all reporting groups"
+                    }
+                ],
+                "denoms": [
+                    {
+                        "units": "Participants",
+                        "counts": [
+                            {
+                                "groupId": "BG000",
+                                "value": "43"
+                            },
+                            {
+                                "groupId": "BG001",
+                                "value": "42"
+                            },
+                            {
+                                "groupId": "BG002",
+                                "value": "85"
+                            }
+                        ]
+                    }
+                ],
+                "measures": [
+                    {
+                        "title": "Age, Categorical",
+                        "paramType": "COUNT_OF_PARTICIPANTS",
+                        "unitOfMeasure": "Participants",
+                        "classes": [
+                            {
+                                "categories": [
+                                    {
+                                        "title": "<=18 years",
+                                        "measurements": [
+                                            {
+                                                "groupId": "BG000",
+                                                "value": "43"
+                                            },
+                                            {
+                                                "groupId": "BG001",
+                                                "value": "42"
+                                            },
+                                            {
+                                                "groupId": "BG002",
+                                                "value": "85"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "title": "Between 18 and 65 years",
+                                        "measurements": [
+                                            {
+                                                "groupId": "BG000",
+                                                "value": "0"
+                                            },
+                                            {
+                                                "groupId": "BG001",
+                                                "value": "0"
+                                            },
+                                            {
+                                                "groupId": "BG002",
+                                                "value": "0"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "title": ">=65 years",
+                                        "measurements": [
+                                            {
+                                                "groupId": "BG000",
+                                                "value": "0"
+                                            },
+                                            {
+                                                "groupId": "BG001",
+                                                "value": "0"
+                                            },
+                                            {
+                                                "groupId": "BG002",
+                                                "value": "0"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Age Continuous",
+                        "paramType": "MEAN",
+                        "dispersionType": "STANDARD_DEVIATION",
+                        "unitOfMeasure": "years",
+                        "classes": [
+                            {
+                                "categories": [
+                                    {
+                                        "measurements": [
+                                            {
+                                                "groupId": "BG000",
+                                                "value": "11.1",
+                                                "spread": "4.1"
+                                            },
+                                            {
+                                                "groupId": "BG001",
+                                                "value": "9.9",
+                                                "spread": "4.6"
+                                            },
+                                            {
+                                                "groupId": "BG002",
+                                                "value": "10.5",
+                                                "spread": "4.3"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Sex: Female, Male",
+                        "paramType": "COUNT_OF_PARTICIPANTS",
+                        "unitOfMeasure": "Participants",
+                        "classes": [
+                            {
+                                "categories": [
+                                    {
+                                        "title": "Female",
+                                        "measurements": [
+                                            {
+                                                "groupId": "BG000",
+                                                "value": "34"
+                                            },
+                                            {
+                                                "groupId": "BG001",
+                                                "value": "29"
+                                            },
+                                            {
+                                                "groupId": "BG002",
+                                                "value": "63"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "title": "Male",
+                                        "measurements": [
+                                            {
+                                                "groupId": "BG000",
+                                                "value": "9"
+                                            },
+                                            {
+                                                "groupId": "BG001",
+                                                "value": "13"
+                                            },
+                                            {
+                                                "groupId": "BG002",
+                                                "value": "22"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "title": "Region of Enrollment",
+                        "paramType": "NUMBER",
+                        "unitOfMeasure": "participants",
+                        "classes": [
+                            {
+                                "title": "United States",
+                                "categories": [
+                                    {
+                                        "measurements": [
+                                            {
+                                                "groupId": "BG000",
+                                                "value": "43"
+                                            },
+                                            {
+                                                "groupId": "BG001",
+                                                "value": "42"
+                                            },
+                                            {
+                                                "groupId": "BG002",
+                                                "value": "85"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "outcomeMeasuresModule": {
+                "outcomeMeasures": [
+                    {
+                        "type": "PRIMARY",
+                        "title": "Proportion of Participants Who Attain Inactive Disease by 6 Months",
+                        "populationDescription": "all participants receiving study medications",
+                        "reportingStatus": "POSTED",
+                        "paramType": "NUMBER",
+                        "unitOfMeasure": "participants",
+                        "timeFrame": "6 months after initiation of study intervention",
+                        "groups": [
+                            {
+                                "id": "OG000",
+                                "title": "Methotrexate Arm",
+                                "description": "Methotrexate 0.5 mg/kg given by subcutaneous injection once per week, plus placebo etanercept and placebo prednisolone"
+                            },
+                            {
+                                "id": "OG001",
+                                "title": "Methotrexate-Prednisolone-Etanercept Arm",
+                                "description": "Methotrexate 0.5 mg/kg given by subcutaneous injection once per week, plus etanercept 0.8 mg/kg given by subcutaneous injection once per week, plus prednisolone by mouth daily with decreasing dose tapered over 16 weeks"
+                            }
+                        ],
+                        "denoms": [
+                            {
+                                "units": "Participants",
+                                "counts": [
+                                    {
+                                        "groupId": "OG000",
+                                        "value": "43"
+                                    },
+                                    {
+                                        "groupId": "OG001",
+                                        "value": "42"
+                                    }
+                                ]
+                            }
+                        ],
+                        "classes": [
+                            {
+                                "categories": [
+                                    {
+                                        "measurements": [
+                                            {
+                                                "groupId": "OG000",
+                                                "value": "10"
+                                            },
+                                            {
+                                                "groupId": "OG001",
+                                                "value": "17"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "SECONDARY",
+                        "title": "Safety Profiles, Including the Number of Treatment-emergent, Serious, or Unexpected Adverse Events and Other Important Medical Events",
+                        "populationDescription": "all participants that received study medications",
+                        "reportingStatus": "POSTED",
+                        "paramType": "NUMBER",
+                        "unitOfMeasure": "events",
+                        "timeFrame": "Over 12 months maximum study participation per subject",
+                        "groups": [
+                            {
+                                "id": "OG000",
+                                "title": "Methotrexate Arm",
+                                "description": "Methotrexate 0.5 mg/kg given by subcutaneous injection once per week, plus placebo etanercept and placebo prednisolone"
+                            },
+                            {
+                                "id": "OG001",
+                                "title": "Methotrexate-Prednisolone-Etanercept Arm",
+                                "description": "Methotrexate 0.5 mg/kg given by subcutaneous injection once per week, plus etanercept 0.8 mg/kg given by subcutaneous injection once per week, plus prednisolone by mouth daily with decreasing dose tapered over 16 weeks"
+                            }
+                        ],
+                        "denoms": [
+                            {
+                                "units": "Participants",
+                                "counts": [
+                                    {
+                                        "groupId": "OG000",
+                                        "value": "43"
+                                    },
+                                    {
+                                        "groupId": "OG001",
+                                        "value": "42"
+                                    }
+                                ]
+                            }
+                        ],
+                        "classes": [
+                            {
+                                "categories": [
+                                    {
+                                        "measurements": [
+                                            {
+                                                "groupId": "OG000",
+                                                "value": "1"
+                                            },
+                                            {
+                                                "groupId": "OG001",
+                                                "value": "2"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "SECONDARY",
+                        "title": "Clinical Remission on Medication",
+                        "description": "6 months of clinical inactive disease",
+                        "populationDescription": "all participants receiving study medications",
+                        "reportingStatus": "POSTED",
+                        "paramType": "NUMBER",
+                        "unitOfMeasure": "participants",
+                        "timeFrame": "12 months or end of study",
+                        "groups": [
+                            {
+                                "id": "OG000",
+                                "title": "Methotrexate Arm",
+                                "description": "Methotrexate 0.5 mg/kg given by subcutaneous injection once per week, plus placebo etanercept and placebo prednisolone"
+                            },
+                            {
+                                "id": "OG001",
+                                "title": "Methotrexate-Prednisolone-Etanercept Arm",
+                                "description": "Methotrexate 0.5 mg/kg given by subcutaneous injection once per week, plus etanercept 0.8 mg/kg given by subcutaneous injection once per week, plus prednisolone by mouth daily with decreasing dose tapered over 16 weeks"
+                            }
+                        ],
+                        "denoms": [
+                            {
+                                "units": "Participants",
+                                "counts": [
+                                    {
+                                        "groupId": "OG000",
+                                        "value": "43"
+                                    },
+                                    {
+                                        "groupId": "OG001",
+                                        "value": "42"
+                                    }
+                                ]
+                            }
+                        ],
+                        "classes": [
+                            {
+                                "categories": [
+                                    {
+                                        "measurements": [
+                                            {
+                                                "groupId": "OG000",
+                                                "value": "3"
+                                            },
+                                            {
+                                                "groupId": "OG001",
+                                                "value": "9"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            "adverseEventsModule": {
+                "frequencyThreshold": "1",
+                "eventGroups": [
+                    {
+                        "id": "EG000",
+                        "title": "Methotrexate Arm",
+                        "description": "Methotrexate 0.5 mg/kg given by subcutaneous injection once per week, plus placebo etanercept and placebo prednisolone",
+                        "seriousNumAffected": 1,
+                        "seriousNumAtRisk": 43,
+                        "otherNumAffected": 0,
+                        "otherNumAtRisk": 43
+                    },
+                    {
+                        "id": "EG001",
+                        "title": "Methotrexate-Prednisolone-Etanercept Arm",
+                        "description": "Methotrexate 0.5 mg/kg given by subcutaneous injection once per week, plus etanercept 0.8 mg/kg given by subcutaneous injection once per week, plus prednisolone by mouth daily with decreasing dose tapered over 16 weeks",
+                        "seriousNumAffected": 2,
+                        "seriousNumAtRisk": 42,
+                        "otherNumAffected": 3,
+                        "otherNumAtRisk": 42
+                    }
+                ],
+                "seriousEvents": [
+                    {
+                        "term": "pneumonia",
+                        "organSystem": "Infections and infestations",
+                        "sourceVocabulary": "pneumonia",
+                        "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                        "notes": "This participant withdrew from the study, the event resolved without sequelae",
+                        "stats": [
+                            {
+                                "groupId": "EG000",
+                                "numEvents": 0,
+                                "numAffected": 0,
+                                "numAtRisk": 43
+                            },
+                            {
+                                "groupId": "EG001",
+                                "numEvents": 1,
+                                "numAffected": 1,
+                                "numAtRisk": 42
+                            }
+                        ]
+                    },
+                    {
+                        "term": "psychosis",
+                        "organSystem": "Psychiatric disorders",
+                        "sourceVocabulary": "psychosis",
+                        "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                        "notes": "Participant on open label medications had acute psyhotic event that resolved with tapering of prednisolone. Patient continued in the study.",
+                        "stats": [
+                            {
+                                "groupId": "EG000",
+                                "numEvents": 1,
+                                "numAffected": 1,
+                                "numAtRisk": 43
+                            },
+                            {
+                                "groupId": "EG001",
+                                "numEvents": 0,
+                                "numAffected": 0,
+                                "numAtRisk": 42
+                            }
+                        ]
+                    },
+                    {
+                        "term": "septic hip",
+                        "organSystem": "Infections and infestations",
+                        "sourceVocabulary": "septic hop",
+                        "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                        "notes": "after discontinuation of open label therapy for 2 months, patient was found to have infection of the hip, this resolved. No organism was recovered.",
+                        "stats": [
+                            {
+                                "groupId": "EG000",
+                                "numEvents": 0,
+                                "numAffected": 0,
+                                "numAtRisk": 43
+                            },
+                            {
+                                "groupId": "EG001",
+                                "numEvents": 1,
+                                "numAffected": 1,
+                                "numAtRisk": 42
+                            }
+                        ]
+                    }
+                ],
+                "otherEvents": [
+                    {
+                        "term": "liver function test elevation",
+                        "organSystem": "Hepatobiliary disorders",
+                        "sourceVocabulary": "abnormal transaminas",
+                        "assessmentType": "SYSTEMATIC_ASSESSMENT",
+                        "notes": "elevation of LFT grade 3",
+                        "stats": [
+                            {
+                                "groupId": "EG000",
+                                "numEvents": 0,
+                                "numAffected": 0,
+                                "numAtRisk": 43
+                            },
+                            {
+                                "groupId": "EG001",
+                                "numEvents": 3,
+                                "numAffected": 3,
+                                "numAtRisk": 42
+                            }
+                        ]
+                    }
+                ]
+            },
+            "moreInfoModule": {
+                "limitationsAndCaveats": {
+                    "description": "small number of participants with recent onset poly JIA"
+                },
+                "certainAgreement": {
+                    "piSponsorEmployee": false,
+                    "restrictiveAgreement": false
+                },
+                "pointOfContact": {
+                    "title": "Carol Wallace, MD Principal Investigator",
+                    "organization": "University of Washington and Seattle Children's Hospital",
+                    "email": "cwallace@u.washington.edu",
+                    "phone": "206-987-2057"
+                }
+            }
+        }
+    }
+]
