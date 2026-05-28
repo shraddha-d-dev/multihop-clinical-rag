@@ -1,1 +1,6 @@
 requests
+langchain-text-splitters
+langchain-community
+langchain-huggingface
+sentence-transformers
+faiss-cpu

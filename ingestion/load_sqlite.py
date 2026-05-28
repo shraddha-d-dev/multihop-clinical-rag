@@ -55,16 +55,15 @@ if __name__ == '__main__':
     db_name = 'data/trial_data.db'
     conn = sqlite3.connect(db_name)
     
-    # create_schema(conn)
+    create_schema(conn)
 
-    # with open('data/trial_data.json', 'r') as f:
-    #     studies = json.load(f)
-    # print(studies)
+    with open('data/trial_data.json', 'r') as f:
+        studies = json.load(f)
 
-    # for idx,study in enumerate(studies):
-    #     insert_trial(conn, study)
-    #     print(f'Inserted study: {idx}')
-    # print(f'Loaded {len(studies)} studies into SQLite') 
+    for idx,study in enumerate(studies):
+        insert_trial(conn, study)
+        print(f'Inserted study: {idx}')
+    print(f'Loaded {len(studies)} studies into SQLite') 
     # 16713 excluding duplicates
 
     get_trials(conn)

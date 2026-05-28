@@ -222,3 +222,7 @@ __marimo__/
 
 # json
 data/trial_data.json
+
+# vector db
+*.faiss
+*.pkl
