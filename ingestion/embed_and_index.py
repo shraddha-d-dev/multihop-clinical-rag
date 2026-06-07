@@ -4,7 +4,7 @@ import json
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_core.documents import Document
-from langchain_community.vectorstores.faiss import FAISS
+from langchain_community.vectorstores import FAISS
 
 def build_vector_index(studies, embeddings, index_path, batch_size):
     splitter = RecursiveCharacterTextSplitter(
