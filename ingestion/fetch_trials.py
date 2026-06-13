@@ -1,7 +1,12 @@
+import os
 import requests
 import json
+from dotenv import load_dotenv
 
-BASE_URL = 'https://clinicaltrials.gov/api/v2/studies'
+load_dotenv()
+
+BASE_URL = os.getenv("BASE_URL")
+MAX_STUDIES = int(os.getenv("MAX_STUDIES"))
 
 
 #target conditions:
@@ -57,7 +62,7 @@ def fetch_trial_data(condition: str, max_studies: int) -> dict:
 if __name__ == '__main__':
 
     all_studies = []
-    max_studies = 586000 # 585919 
+    max_studies = MAX_STUDIES # 585919 
     # Target conditions: Rheumatoid Arthritis, Non-Small Cell Lung Cancer, Type 2 Diabetes, Heart Failure
     conditions = ["Rheumatoid Arthritis", "Non-Small Cell Lung Cancer", "Type 2 Diabetes", "Heart Failure"]
 

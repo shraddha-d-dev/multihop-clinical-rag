@@ -1,16 +1,19 @@
 from __future__ import annotations
 from typing import TYPE_CHECKING
+import os
 from langchain_groq import ChatGroq
 from langchain_core.prompts import ChatPromptTemplate
 import json
 from agent.tools.sql_tool import sql_retrieve
 from agent.tools.vector_tool import vector_retrieve
+from dotenv import load_dotenv
 
+LLM_MODEL=os.getenv("LLM_MODEL")
 
 if TYPE_CHECKING:
     from agent.graph import AgentState
 
-llm = ChatGroq(model="llama-3.3-70b-versatile", temperature=0)
+llm = ChatGroq(model=LLM_MODEL, temperature=0)
 
 CONFLICT_PROMPT = ChatPromptTemplate.from_messages([
     ("system","""You are a clinical research analyst. Review the retrieved trial results and determine if any trials show conflicting outcomes for the same intervention or question. A conflict exists when:
@@ -41,15 +44,5 @@ def conflict_detector_node(state: AgentState) -> AgentState:
         conflict = False
         explanation = ""
     return {**state, "conflicts_detected": conflict, "conflict_details": explanation}
-
-# if __name__ == "__main__":
-
-    # query = "What HbA1c reductions were reported in these trials?"
-    # db_path = 'data/trial_data.db'
-    # sql_results = sql_retrieve(query, db_path)
-    # index_path = 'data/faiss_index'
-    # vector_results = vector_retrieve(query, index_path, k = 3)
-    # print(conflict_detector_node(None, query, sql_results, vector_results))
-
     
 

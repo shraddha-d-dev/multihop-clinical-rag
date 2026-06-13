@@ -1,13 +1,17 @@
 from __future__ import annotations
 from typing import TYPE_CHECKING
+import os
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_groq import ChatGroq
 import json
+from dotenv import load_dotenv
 
 if TYPE_CHECKING:
     from agent.graph import AgentState
 
-llm = ChatGroq(model='llama-3.3-70b-versatile', temperature=0)
+LLM_MODEL = os.getenv("LLM_MODEL")
+
+llm = ChatGroq(model=LLM_MODEL, temperature=0)
 
 SYNTHESIZE_PROMPT = ChatPromptTemplate.from_messages([
     ("system", """You are a clinical research assistant. Synthesize a clear, accurate answer from the retrieved evidence. Rules:

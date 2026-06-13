@@ -3,12 +3,13 @@ from typing import TYPE_CHECKING
 import os
 from agent.tools.sql_tool import sql_retrieve
 from agent.tools.vector_tool import vector_retrieve
+from dotenv import load_dotenv
 
 if TYPE_CHECKING:
     from agent.graph import AgentState
 
-DB_PATH    = "data/trials.db"
-INDEX_PATH = "data/faiss_index"
+DB_PATH = os.getenv("DB_PATH")
+INDEX_PATH = os.getenv("INDEX_PATH")
 VECTOR_K   = 3
 
 

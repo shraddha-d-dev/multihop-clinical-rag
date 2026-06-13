@@ -1,3 +1,4 @@
+import os
 import torch
 import faiss
 import json
@@ -5,6 +6,11 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_core.documents import Document
 from langchain_community.vectorstores import FAISS
+from dotenv import load_dotenv
+
+EMBEDDINGS_MODEL = os.getenv("EMBEDDINGS_MODEL")
+JSON_FILE_PATH = os.getenv("JSON_FILE_PATH")
+INDEX_PATH = os.getenv("INDEX_PATH")
 
 def build_vector_index(studies, embeddings, index_path, batch_size):
     splitter = RecursiveCharacterTextSplitter(
@@ -64,11 +70,11 @@ def build_vector_index(studies, embeddings, index_path, batch_size):
 
 if __name__ == '__main__':
 
-    with open('data/trial_data.json', 'r') as f:
+    with open(JSON_FILE_PATH, 'r') as f:
         studies = json.load(f)
-    index_path = 'data/faiss_index'
+    index_path = INDEX_PATH
     batch_size = 50
-    embeddings = HuggingFaceEmbeddings(model="BAAI/bge-small-en-v1.5")
+    embeddings = HuggingFaceEmbeddings(model=EMBEDDINGS_MODEL)
 
     
     build_vector_index(studies, embeddings, index_path, batch_size)
