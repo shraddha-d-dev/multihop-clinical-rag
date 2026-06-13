@@ -1,9 +1,13 @@
+import os
 import sqlite3
 from langchain_groq import ChatGroq
+from dotenv import load_dotenv
+
+LLM_MODEL=os.getenv("LLM_MODEL")
 
 def nl_to_sql(query: str, schema: str) -> str:
     llm = ChatGroq(
-        model = "llama-3.3-70b-versatile",
+        model = LLM_MODEL,
         temperature = 0
     )
     prompt = f"""Convert this natural language query into SQlite SQL.

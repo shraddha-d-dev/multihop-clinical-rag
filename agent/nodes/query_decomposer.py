@@ -1,14 +1,18 @@
 from __future__ import annotations
 from typing import TYPE_CHECKING
+import os
 from langchain_groq import ChatGroq
 from langchain_core.prompts import ChatPromptTemplate
 import json, re
+from dotenv import load_dotenv
+
+LLM_MODEL=os.getenv("LLM_MODEL")
 
 if TYPE_CHECKING:
     from agent.graph import AgentState
 
 llm = ChatGroq(
-    model="llama-3.3-70b-versatile",
+    model=LLM_MODEL,
     temperature=0.5
 )
 

@@ -1,5 +1,10 @@
+import os
 import sqlite3
 import json
+from dotenv import load_dotenv
+
+DB_NAME=os.getenv("DB_NAME")
+JSON_FILE_PATH=os.getenv("JSON_FILE_PATH")
 
 def create_schema(conn):
     conn.execute("""
@@ -52,12 +57,12 @@ def get_trials(conn):
 
 if __name__ == '__main__':
 
-    db_name = 'data/trial_data.db'
+    db_name = DB_NAME
     conn = sqlite3.connect(db_name)
     
     create_schema(conn)
 
-    with open('data/trial_data.json', 'r') as f:
+    with open(JSON_FILE_PATH, 'r') as f:
         studies = json.load(f)
 
     for idx,study in enumerate(studies):
