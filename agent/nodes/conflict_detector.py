@@ -8,6 +8,8 @@ from agent.tools.sql_tool import sql_retrieve
 from agent.tools.vector_tool import vector_retrieve
 from dotenv import load_dotenv
 
+load_dotenv()
+
 LLM_MODEL=os.getenv("LLM_MODEL")
 
 if TYPE_CHECKING:

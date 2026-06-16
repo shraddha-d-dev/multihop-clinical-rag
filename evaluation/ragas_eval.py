@@ -10,6 +10,8 @@ from langchain_groq import ChatGroq
 from langchain_huggingface import HuggingFaceEmbeddings
 from dotenv import load_dotenv 
 
+load_dotenv()
+
 LLM_MODEL = os.getenv("LLM_MODEL")
 EMBEDDINGS_MODEL = os.getenv("EMBEDDINGS_MODEL")
 
@@ -61,15 +63,6 @@ def log_eval(query: str, scores: dict, citations: list, conflict: bool, db_path:
                 num_citations INTEGER,
                 conflict_detected INTEGER
     )""")
-
-    # print('\n\n=====================\n\n')
-    # print(type(query), query)
-    # print(type(scores["faithfulness"]), scores["faithfulness"]), 
-    # print(type(scores["answer_relevancy"]), scores["answer_relevancy"]), 
-    # print(type(scores["context_recall"]), scores["context_recall"]), 
-    # print(type(len(citations)), len(citations)), 
-    # print(type(int(conflict)), int(conflict))
-    # print('\n\n=====================\n\n')
 
     cursor.execute("INSERT INTO eval_log VALUES(?,?,?,?,?,?,?)",
                 (datetime.now().isoformat(), 

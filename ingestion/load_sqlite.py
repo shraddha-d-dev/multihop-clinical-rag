@@ -3,6 +3,8 @@ import sqlite3
 import json
 from dotenv import load_dotenv
 
+load_dotenv()
+
 DB_NAME=os.getenv("DB_NAME")
 JSON_FILE_PATH=os.getenv("JSON_FILE_PATH")
 

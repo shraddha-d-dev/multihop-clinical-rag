@@ -6,6 +6,8 @@ from langchain_groq import ChatGroq
 import json
 from dotenv import load_dotenv
 
+load_dotenv()
+
 if TYPE_CHECKING:
     from agent.graph import AgentState
 

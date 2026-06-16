@@ -3,6 +3,8 @@ import sqlite3
 from langchain_groq import ChatGroq
 from dotenv import load_dotenv
 
+load_dotenv()
+
 LLM_MODEL=os.getenv("LLM_MODEL")
 
 def nl_to_sql(query: str, schema: str) -> str:
