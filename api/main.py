@@ -59,7 +59,7 @@ async def query(request: QueryRequest):
 
 @app.get("/metrics")
 def metrics():
-    return PlainTextResponse(generate_latest())
+    return PlainTextResponse()
 
 @app.get("/health")
 def health():
