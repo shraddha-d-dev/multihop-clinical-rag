@@ -49,7 +49,7 @@ jobs:
           aws-region: us-west-1
       - name: Build and push Docker image
         run: |
+          aws ecr get-login-password --region us-west-1 | docker login --username AWS --password-stdin ${{ secrets.ECR_URI }}
           docker build -t multihop-clinical-rag .
           docker tag multihop-clinical-rag:latest ${{ secrets.ECR_URI }}:latest
-          aws ecr get-login-password | docker login --username AWS --password-stdin ${{ secrets.ECR_URI }}
           docker push ${{ secrets.ECR_URI }}:latest 
