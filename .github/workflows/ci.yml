@@ -19,6 +19,20 @@ jobs:
       - name: Run tests
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          LLM_MODEL: "llama-3.3-70b-versatile"
+          EMBEDDINGS_MODEL: "BAAI/bge-small-en-v1.5"
+          JSON_FILE_PATH: "data/trial_data.json"
+          DB_NAME: "data/trial_data.db"
+          DB_PATH: "data/trials.db"
+          INDEX_PATH: "data/faiss_index"
+          LOG_DB_PATH: "data/eval_data.db"
+          VECTOR_K: 3
+          OMP_NUM_THREADS: 1
+          MKL_NUM_THREADS: 1
+          OPENBLAS_NUM_THREADS: 1
+          VECLIB_MAXIMUM_THREADS: 1
+          BASE_URL: "https://clinicaltrials.gov/api/v2/studies"
+          MAX_STUDIES: 586000
         run: python -m pytest tests/ -v --tb=short
 
   build-and-push:
