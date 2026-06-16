@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-EMBEDDINGS_MODEL = os.getenv("EMBEDDINGS_MODEL")
+EMBEDDINGS_MODEL_PATH = os.getenv("EMBEDDINGS_MODEL_PATH")
 JSON_FILE_PATH = os.getenv("JSON_FILE_PATH")
 INDEX_PATH = os.getenv("INDEX_PATH")
 
@@ -76,7 +76,7 @@ if __name__ == '__main__':
         studies = json.load(f)
     index_path = INDEX_PATH
     batch_size = 50
-    embeddings = HuggingFaceEmbeddings(model=EMBEDDINGS_MODEL)
+    embeddings = HuggingFaceEmbeddings(model=EMBEDDINGS_MODEL_PATH)
 
     
     build_vector_index(studies, embeddings, index_path, batch_size)

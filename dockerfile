@@ -1,15 +1,13 @@
-FROM python:3.11-slim
+# Dockerfile
+FROM public.ecr.aws/lambda/python:3.11
 
-WORKDIR /app
-
-# Install dependencies first (cached layer)
+# Install dependencies into Lambda task root
 COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt \
+    mangum  # adapts FastAPI to Lambda event format
 
-# Copy source code
-COPY . .
+# Copy entire project
+COPY . ${LAMBDA_TASK_ROOT}
 
-# Expose FastAPI port
-EXPOSE 8000
-
-CMD ["uvicorn", "api.main:app", "--host", "0.0.0.0", "--port", "8000"]
+# Lambda handler entrypoint
+CMD ["api.lambda_handler.handler"]

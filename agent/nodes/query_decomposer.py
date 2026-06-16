@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 LLM_MODEL=os.getenv("LLM_MODEL")
-print(f'\n\n========={LLM_MODEL}==========\n\n')
+
 if TYPE_CHECKING:
     from agent.graph import AgentState
 

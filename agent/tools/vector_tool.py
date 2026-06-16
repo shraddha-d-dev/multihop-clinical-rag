@@ -5,11 +5,11 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-EMBEDDINGS_MODEL=os.getenv("EMBEDDINGS_MODEL")
+EMBEDDINGS_MODEL_PATH=os.getenv("EMBEDDINGS_MODEL_PATH")
 
 def vector_retrieve(query: str, index_path: str, k: int) -> list[dict]: 
     
-    embeddings = HuggingFaceEmbeddings(model=EMBEDDINGS_MODEL)
+    embeddings = HuggingFaceEmbeddings(model=EMBEDDINGS_MODEL_PATH)
     vectorstore = FAISS.load_local(index_path, embeddings, allow_dangerous_deserialization=True)
 
     docs = vectorstore.similarity_search_with_score(query, k)

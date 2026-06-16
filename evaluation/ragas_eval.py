@@ -13,12 +13,12 @@ from dotenv import load_dotenv
 load_dotenv()
 
 LLM_MODEL = os.getenv("LLM_MODEL")
-EMBEDDINGS_MODEL = os.getenv("EMBEDDINGS_MODEL")
+EMBEDDINGS_MODEL_PATH = os.getenv("EMBEDDINGS_MODEL_PATH")
 
 llm = ChatGroq(model=LLM_MODEL, temperature=0)
 evaluator_llm = LangchainLLMWrapper(llm)
 
-hf_embeddings = HuggingFaceEmbeddings(model_name = EMBEDDINGS_MODEL)
+hf_embeddings = HuggingFaceEmbeddings(model_name = EMBEDDINGS_MODEL_PATH)
 evaluator_embeddings = LangchainEmbeddingsWrapper(hf_embeddings)
 
 def evaluate_response(query: str, answer: str, contexts: list[str], ground_truth: str = "") -> dict:

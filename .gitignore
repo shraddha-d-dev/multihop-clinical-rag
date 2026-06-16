@@ -226,3 +226,5 @@ data/trial_data.json
 # vector db
 *.faiss
 *.pkl
+
+.DS_store

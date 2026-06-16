@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-DB_NAME=os.getenv("DB_NAME")
+DB_PATH=os.getenv("DB_PATH")
 JSON_FILE_PATH=os.getenv("JSON_FILE_PATH")
 
 def create_schema(conn):
@@ -59,7 +59,7 @@ def get_trials(conn):
 
 if __name__ == '__main__':
 
-    db_name = DB_NAME
+    db_name = DB_PATH
     conn = sqlite3.connect(db_name)
     
     create_schema(conn)
