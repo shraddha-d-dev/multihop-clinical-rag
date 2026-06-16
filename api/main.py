@@ -8,6 +8,8 @@ import time
 from agent.graph import agent
 from dotenv import load_dotenv
 
+load_dotenv()
+
 LOG_DB_PATH = os.getenv("LOG_DB_PATH")
 
 app = FastAPI(title="MultiHop Clinical RAG", version="1.0.0")

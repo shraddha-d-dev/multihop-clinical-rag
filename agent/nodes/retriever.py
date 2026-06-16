@@ -5,6 +5,8 @@ from agent.tools.sql_tool import sql_retrieve
 from agent.tools.vector_tool import vector_retrieve
 from dotenv import load_dotenv
 
+load_dotenv()
+
 if TYPE_CHECKING:
     from agent.graph import AgentState
 

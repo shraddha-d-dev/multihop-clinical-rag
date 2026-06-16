@@ -6,8 +6,10 @@ from langchain_core.prompts import ChatPromptTemplate
 import json, re
 from dotenv import load_dotenv
 
-LLM_MODEL=os.getenv("LLM_MODEL")
+load_dotenv()
 
+LLM_MODEL=os.getenv("LLM_MODEL")
+print(f'\n\n========={LLM_MODEL}==========\n\n')
 if TYPE_CHECKING:
     from agent.graph import AgentState
 

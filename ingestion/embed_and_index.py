@@ -8,6 +8,8 @@ from langchain_core.documents import Document
 from langchain_community.vectorstores import FAISS
 from dotenv import load_dotenv
 
+load_dotenv()
+
 EMBEDDINGS_MODEL = os.getenv("EMBEDDINGS_MODEL")
 JSON_FILE_PATH = os.getenv("JSON_FILE_PATH")
 INDEX_PATH = os.getenv("INDEX_PATH")
