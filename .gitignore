@@ -228,3 +228,5 @@ data/trial_data.json
 *.pkl
 
 .DS_store
+
+models/*

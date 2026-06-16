@@ -1,13 +1,14 @@
-version: "3.8"
+name: multihop-clinical-rag
 services:
   api:
     build: .
     ports:
-      - "8000:8000"
+      - "8080:8080"
     env_file:
       - .env
     volumes:
       - ./data:/app/data   # mounts your SQLite + FAISS
+      - ./models:/app/models
 
   prometheus:
     image: prom/prometheus
