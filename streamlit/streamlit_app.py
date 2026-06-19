@@ -7,15 +7,16 @@ API_URL = os.getenv("API_URL", "http://localhost:8080")
 st.set_page_config(page_title="MultiHop Clinical RAG Demo", layout="wide")
 st.title("MultiHop Clinical RAG")
 st.caption("Multi-hop agentic RAG over 16K+ clinical trials")
+st.caption("Target Conditions: Rheumatoid Arthritis, Non-Small Cell Lung Cancer, Type 2 Diabetes, Heart Failure")
 
 
 example_queries = [
-    "Which Phase 3 GLP-1 trials since 2021 showed HbA1c reduction > 1%?",
+    "What is the most widely used drug for treatment of arthritis in 2026?",
     "Do trials for semaglutide show consistent cardiovascular outcomes?",
     "Which sponsors are running immunotherapy trials for NSCLC with enrollment > 500?",
 ]
 
-query = st.selectbox("Try an example query or try your own", [""] + example_queries)
+query = st.selectbox("Try an example query:", [""] + example_queries)
 custom = st.text_input("Or enter a custom query:")
 final_query = custom or query
 
