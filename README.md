@@ -6,8 +6,8 @@
 
 > Multi-hop agentic RAG over clinical trial data — with conflict detection, evidence chains, and production monitoring
 
-**[Live Demo](https://multihop-clinical-rag-abcxyz-uw.a.run.app)** 
-(PS. The demo is delayed in response as it runs on GCP cloud run service and uses a FUSE mounted Database)
+**[Live Demo](https://clinicalmind-streamlit-483186754561.us-west1.run.app)** 
+(P.S. The demo is delayed in response as it runs on GCP cloud run service and uses a FUSE mounted Database)
 
 ---
 
@@ -16,7 +16,7 @@
 ClinicalMind answers complex questions that span multiple clinical trials — questions that require retrieval, cross-study comparison, and conflict detection before a reliable answer can be synthesized.
 
 The target conditions for the scope of the project are:
-Rheumatoid Arthritis,Non-Small Cell Lung Cancer, Type 2 Diabetes, Heart Failure
+Rheumatoid Arthritis, Non-Small Cell Lung Cancer, Type 2 Diabetes, Heart Failure
 
 A researcher asking *"Which Phase 3 trials for Type 2 Diabetes since 2020 showed HbA1c reduction greater than 1%, and how did dropout rates compare to SGLT2 trials?"* needs evidence pulled from multiple studies, compared, and reconciled — not a single-document lookup. Standard RAG fails here because it retrieves from one or two documents and generates an answer without awareness of what other trials exist or whether they agree.
 
@@ -42,49 +42,49 @@ ClinicalTrials.gov API (16K+ trials)
         │
         ▼
 ┌─────────────────────────────────────┐
-│         Ingestion Pipeline           │
-│  Structured fields  → SQLite         │
-│  Protocol text       → FAISS         │
+│         Ingestion Pipeline          │
+│  Structured fields  → SQLite        │
+│  Protocol text       → FAISS        │
 └─────────────────────────────────────┘
         │
         ▼
-┌───────────────────────────────────────────────────┐
-│              LangGraph Agent (4 nodes)              │
+┌──────────────────────────────────────────────────────┐
+│              LangGraph Agent (4 nodes)               │
 │                                                      │
 │  [1] Query Decomposer                                │
 │       Breaks complex queries into atomic sub-queries │
 │                                                      │
 │  [2] Parallel Retriever                              │
-│       SQL tool (structured) + Vector tool (semantic)  │
-│       BM25 hybrid search                              │
+│       SQL tool (structured) + Vector tool (semantic) │
+│       BM25 hybrid search                             │
 │                                                      │
-│  [3] Conflict Detector                                │
-│       Flags when trials report contradictory outcomes │
+│  [3] Conflict Detector                               │
+│       Flags when trials report contradictory outcomes│
 │                                                      │
-│  [4] Citation Synthesizer                             │
-│       Final answer + source NCT IDs + confidence       │
-└───────────────────────────────────────────────────┘
+│  [4] Citation Synthesizer                            │
+│       Final answer + source NCT IDs + confidence     │
+└──────────────────────────────────────────────────────┘
         │
         ▼
-┌─────────────────────────────────┐
-│       Evaluation Layer           │
-│  RAGAS: faithfulness, relevancy,  │
+┌────────────────────────────────────┐
+│       Evaluation Layer             │
+│  RAGAS: faithfulness, relevancy,   │
 │  context recall — logged per query │
-└─────────────────────────────────┘
+└────────────────────────────────────┘
         │
         ▼
 ┌─────────────────────────────────┐
-│     FastAPI Inference Layer      │
-│  Pydantic-validated responses     │
-│  Streamlit demo UI                │
+│     FastAPI Inference Layer     │
+│  Pydantic-validated responses   │
+│  Streamlit demo UI              │
 └─────────────────────────────────┘
         │
         ▼
-┌─────────────────────────────────┐
+┌───────────────────────────────────┐
 │   Monitoring + CI/CD              │
-│  Cloud Monitoring + Grafana Cloud  │
-│  GitHub Actions → Cloud Run        │
-└─────────────────────────────────┘
+│  Cloud Monitoring + Grafana Cloud │
+│  GitHub Actions → Cloud Run       │
+└───────────────────────────────────┘
 ```
 
 ## What makes this different from basic RAG
